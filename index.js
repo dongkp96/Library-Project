@@ -17,10 +17,10 @@ to add the book object to the library */
 
 const hobbit = new book("The Hobbit", "J.R.R Tolkien", 295, true);
 
-
 hobbit.addToLibrary(library);
 
-for(let i =0; i <library.length; i++){
+
+/*for(let i =0; i <library.length; i++){
     alert(library[i]);
-}
+}*/
 

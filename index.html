@@ -3,11 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Code for Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--Style sheet link-->
     <link rel="stylesheet" href="style.css">
+    
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <div class="header">
+            <img src="imgs/penguin.svg" alt="Small Penguin logo">
+            <p>Library Catalog by KD</p>
+        </div>
+        <div class="search">
+            <ul class="search-bars">
+                <li>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" placeholder="The Hobbit">
+                </li>
+                <li>
+                    <label for="author">Author:</label>
+                    <input type="" text="" id="author" name="author" placeholder="J.R.R Tolkien">
+                </li>
+                <li>
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages" name="pages" min="1">
+                </li>
+                <li>
+                    <label for="read">Has Read?:</label>
+                    <input type="text" id="read" name="read" placeholder="Yes or No">
+                </li>
+            </ul>
+            <div class="buttons">
+                <button type="generic" id="add">Add Book</button>
+                <button type="generic" id ="delete">Delete Book</button>
+                <button type="generic" id ="?">?????</button>
+            </div>
+        </div>
+
+        <div class="catalog">
+            <h3>Books Display</h3>
+            <div class="legend">
+                <div class="part1">
+                    <img src="imgs/circle.svg" alt="Filled circle logo">
+                    <p>= Has been read</p>
+                </div>
+                <div class="part2">
+                    <img src="imgs/unread-circle.svg" alt="Empty Circle logo">
+                    <p>= Has not been read</p>
+                </div>
+            </div>
+            <div class="book-container">
+                <div class="book">
+                    <h3>Title of the book</h3>
+                    <p>Author of the book</p>
+                    <p>Page number</p>
+                    <img src="imgs/unread-circle.svg" alt="Empty Circle logo meaning has not been read ">
+                </div>
+                <div class="book">
+                    <h3>Title of the book</h3>
+                    <p>Author of the book</p>
+                    <p>Page number</p>
+                    <img src="imgs/unread-circle.svg" alt="Empty Circle logo meaning has not been read ">
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
+<!--JS script location-->
 <script src="index.js"></script>
 </html>
