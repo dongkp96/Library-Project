@@ -69,6 +69,7 @@ function bookToCatalog(book){
         indicator.setAttribute("alt", "Empty Circle logo meaning book has not been read")
     }
 
+    indicator.setAttribute("id", book.pages);
     bookAdded.appendChild(indicator);
 
     bookButtons(bookAdded);
@@ -86,8 +87,6 @@ to add the book object to the library */
 const hobbit = new book("The Hobbit", "J.R.R Tolkien", 295, true);
 hobbit.addToLibrary(library);
 
-const bible = new book("The Bible" ,"Unknown", 100, false);
-bible.addToLibrary(library);
 
 /*for(let i =0; i <library.length; i++){
     alert(library[i]);
@@ -123,9 +122,3 @@ addBtn.addEventListener("click", function(){
 /****
 Creation area
 ****/
-
-for(let i =0; i <library.length; i++){
-    if (library[i].added === false ){
-        bookToCatalog(library[i]);
-    }
-}
