@@ -79,7 +79,6 @@ Search section
 .search{
     background-color:#c3c2c4;
     display:flex;
-    flex-direction:column;
     gap:1rem;
     padding:1rem;
 }
@@ -103,7 +102,7 @@ li>input{
     width:73%;
 }
 
-.buttons> button{
+#add{
     background-color:#e5d2f4;
     padding:0 5px;
     border: 1px gray solid;
@@ -140,10 +139,25 @@ catalog section
 }
 
 .book{
-    background-color:lightslategrey;
+    background-color:#c098e0;
     max-width:250px;
     padding:1rem;
     border:3px solid black;
     border-radius:10px;
     text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:0.5rem;
+}
+
+.book-buttons{
+  display:flex;
+  flex-direction:column;
+  gap:0.5rem;
+}
+.book-buttons>button{
+  background-color: #c3c2c4;
+  border-radius:5px;
+  padding:0 0.5rem;
 }
