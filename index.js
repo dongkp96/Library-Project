@@ -112,6 +112,12 @@ addBtn.addEventListener("click", function(){
     const newbook = new book(title, author, pages, readStatus);
     newbook.addToLibrary(library);
 
+    for(let i =0; i <library.length; i++){
+        if (library[i].added === false ){
+            bookToCatalog(library[i]);
+        }
+    }
+
 })
 
 /****
