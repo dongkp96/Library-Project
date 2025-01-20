@@ -3,22 +3,37 @@ const library = [];
 /****
  Function and Constructors area
  ****/
-function book(title, author, pages, readStatus){
+/*function book(title, author, pages, readStatus){
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.readStatus = readStatus;
     this.added = false;
-    /*constructor for book object*/
 }
 
 book.prototype.addToLibrary = function(library){
-    library.push(this);
+    library.push(this);*/
+
 
     /*Adds a function called addToLibrary to the book.prototype
     uses the push method to add to the Array called library and uses the "this" keyword
-    to add the book object to the library */
+    to add the book object to the library 
 }
+*/
+class book{
+    constructor(title, author,pages, readStatus){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.readStatus = readStatus;
+        this.added = false;
+    }
+
+    addToLibrary(array){
+        array.push(this);
+    }
+}
+
 
 function changeStatus(targetID){
     let selector = "#"+targetID;
